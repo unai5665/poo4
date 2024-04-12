@@ -1,0 +1,2 @@
+import pytest
+from test_indexerror import escoger_fruta
