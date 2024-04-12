@@ -3,8 +3,13 @@ import random
 def intDiv(a:int, b:int)->int:
     try:
         return a // b
-    except:
-        print("realizamos tareas de control de cierre")
+    except TypeError:
+        print("TypeError realizamos tareas de control de cierre")
+    except ZeroDivisionError:
+        print("ZeroDivisionError realizamos tareas de control de cierre")
+    except Exception:
+        print("Exception realizamos tareas de control de cierre")
+    
 
 #Si es el flujo principal
 if __name__ == "__main__":
