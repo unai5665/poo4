@@ -1,11 +1,14 @@
 class EjemploExcepciones:
     # ZeroDivisionError
-    def ZeroDivisionError(self, *, num:int, den:int)->int
-        if (b == 0)
+    def ZeroDivisionError(self, *, num:int, den:int)->int:
+        if (den == 0):
+            raise ZeroDivisionError
+        
+        return num // den
 
     #ValueError
-    def ValueError(numero1:int=("Hola")):
-        print(numero1)
+    def ValueError():
+        pass
 
     #FileNotFoundError
 
