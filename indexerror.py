@@ -4,5 +4,5 @@ def seleccionar_fruta(indice):
         fruta_seleccionada = frutas[indice]
         return fruta_seleccionada
     except IndexError:
-        return None
+        print(None)
  
