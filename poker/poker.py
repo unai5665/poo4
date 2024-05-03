@@ -5,7 +5,8 @@ def load_card_glyphs(path: str = 'cards.dat') -> dict[str, str]:
     '''Retorna un diccionario donde las claves serán los palos
     y los valores serán cadenas de texto con los glifos de las
     cartas sin ningún separador'''
-    ...
+    diccionario_cartas = { 'CLUBS':'♣','DIAMONDS':'◆','HEARTS':'❤','SPADES':'♠'}
+    return diccionario_cartas
 
 
 class Card:
@@ -31,7 +32,10 @@ class Card:
 
         - self.suit deberá almacenar el palo de la carta '♣◆❤♠'.
         - self.value deberá almacenar el valor de la carta (1-13)'''
-        ...
+
+
+        
+        raise InvalidCardError("Invalid card: {repr(suit)} is not a supported suit")
 
     @property
     def cmp_value(self) -> int:
