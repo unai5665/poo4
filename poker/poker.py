@@ -69,7 +69,9 @@ class Card:
 
     def __lt__(self, other: Card):
         '''Indica si una carta vale menos que otra'''
-        ...
+         if self.cmp_value < other.cmp_value:
+            return False
+        return True
 
     def __gt__(self, other: Card):
         '''Indica si una carta vale más que otra'''
