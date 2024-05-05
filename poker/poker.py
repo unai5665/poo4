@@ -64,7 +64,8 @@ class Card:
 
     def __eq__(self, other: Card | object):
         '''Indica si dos cartas son iguales'''
-        ...
+        return self.suit == other.suit and self.value == other.value
+
 
     def __lt__(self, other: Card):
         '''Indica si una carta vale menos que otra'''
