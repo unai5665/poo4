@@ -84,11 +84,11 @@ class Card:
         1. El nuevo palo será el de la carta más alta.
         2. El nuevo valor será la suma de los valores de las cartas. Si valor pasa
         de 13 se convertirá en un AS.'''
-        ...
+        #No hubo manera
 
     def is_ace(self) -> bool:
         '''Indica si una carta es un AS'''
-        ...
+         return self.value == 1
 
     @classmethod
     def get_available_suits(cls) -> str:
