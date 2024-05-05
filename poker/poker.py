@@ -32,10 +32,18 @@ class Card:
 
         - self.suit deberá almacenar el palo de la carta '♣◆❤♠'.
         - self.value deberá almacenar el valor de la carta (1-13)'''
-
-
+        if suit not in [self.CLUBS, self.DIAMONDS, self.HEARTS, self.SPADES]:
+            raise InvalidCardError(f"🃏 Invalid card: {repr(suit)} is not a supported suit")
         
-        raise InvalidCardError("Invalid card: {repr(suit)} is not a supported suit")
+        if isinstance(value, int):
+            if value < 1 or value > 13:
+                raise InvalidCardError(f"🃏 Invalid card: {repr(value)} is not a supported value")
+        elif isinstance(value, str):
+            if value not in ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']:
+                raise InvalidCardError(f"🃏 Invalid card: {repr(value)} is not a supported symbol")
+        self.suit = suit
+        self.value = value
+        
 
     @property
     def cmp_value(self) -> int:
