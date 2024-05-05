@@ -106,4 +106,9 @@ class InvalidCardError(Exception):
     - El mensaje por defecto de esta excepción debe ser: 🃏 Invalid card
     - Si se añaden otros mensajes aparecerán como: 🃏 Invalid card: El mensaje que sea'''
 
-    ...
+    def __init__(self, mensaje="🃏 Invalid card"):
+        self.mensaje = mensaje
+
+    def __str__(self):
+        return self.mensaje
+
