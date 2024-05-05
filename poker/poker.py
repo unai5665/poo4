@@ -59,7 +59,8 @@ class Card:
 
     def __repr__(self):
         '''Devuelve el glifo de la carta'''
-        ...
+        return self.GLYPHS[self.suit][self.cmp_value - 1]
+
 
     def __eq__(self, other: Card | object):
         '''Indica si dos cartas son iguales'''
