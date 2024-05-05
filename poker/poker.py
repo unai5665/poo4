@@ -5,7 +5,7 @@ def load_card_glyphs(path: str = 'cards.dat') -> dict[str, str]:
     '''Retorna un diccionario donde las claves serán los palos
     y los valores serán cadenas de texto con los glifos de las
     cartas sin ningún separador'''
-    diccionario_cartas = { 'CLUBS':'♣','DIAMONDS':'◆','HEARTS':'❤','SPADES':'♠'}
+    diccionario_cartas = { "♣": "🃑🃒🃓🃔🃕🃖🃗🃘🃙🃚🃛🃝🃞", "◆": "🃁🃂🃃🃄🃅🃆🃇🃈🃉🃊🃋🃍🃎", "❤": "🂱🂲🂳🂴🂵🂶🂷🂸🂹🂺🂻🂽🂾", "♠": "🂡🂢🂣🂤🂥🂦🂧🂨🂩🂪🂫🂭🂮"}
     return diccionario_cartas
 
 
