@@ -49,7 +49,13 @@ class Card:
     def cmp_value(self) -> int:
         '''Devuelve el valor (numérico) de la carta para comparar con otras.
         Tener en cuenta el AS.'''
-        ...
+        if isinstance(self.value, int):
+            return self.value
+        
+        values = {'A': 14, 'J': 11, 'Q': 12, 'K': 13}
+        
+        if self.value in values:
+            return values[self.value]
 
     def __repr__(self):
         '''Devuelve el glifo de la carta'''
