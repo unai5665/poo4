@@ -18,8 +18,7 @@ class EjemploExcepciones:
     #FileNotFoundError
     def fileNotFoundError(self):
         try:
-            with open("archivo_que_no_existe.txt", "r"):
-                pass
+            f = open("archivo_que_no_existe.txt", "r")
         except FileNotFoundError:
             raise FileNotFoundError("El archivo no se encontró")
 
