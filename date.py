@@ -70,15 +70,7 @@ class Date:
         return self.weekday == 6
 
     
-    @property
-    def short_date(self) -> str:
-        dia = self.day
-        mes = self.month
-        if self.day < 10:
-            dia = "0"+ str(self.day)
-        if self.month < 10:
-            mes = "0"+ str(self.month)
-        return f"{dia}/{mes}/{self.year}"
+  
 
 
     def __str__(self):
