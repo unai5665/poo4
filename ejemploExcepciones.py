@@ -1,9 +1,5 @@
 class EjemploExcepciones:
-<<<<<<< HEAD
-    #ZeroDivisionError
-=======
     # ZeroDivisionError
->>>>>>> 922cdbb1856a7740380d1d26de6429f3ae718d85
     def zeroDivisionError(self, *, num:int, den:int)->int:
         if (den == 0):
             raise ZeroDivisionError
@@ -12,25 +8,6 @@ class EjemploExcepciones:
 
     #ValueError
     def valueError(self):
-<<<<<<< HEAD
-        raise ValueError
-    #FileNotFoundError
-    def fileNotFoundError(self):
-        raise FileNotFoundError
-
-    #TypeError
-    def typeError(self):
-        raise TypeError
-
-    #PermissionError
-    def permissionError(self):
-        raise PermissionError
-
-    #IndexError
-    def indexError(self):
-        raise IndexError
-
-=======
         valor = "cadena_no_numerica"
         try:
             int(valor)
